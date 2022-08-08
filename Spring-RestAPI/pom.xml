@@ -11,7 +11,7 @@
 	<groupId>com.spring.rest.api</groupId>
 	<artifactId>Spring-RestAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Spring-RestAPI</name>
 	<description>Studies Spring Rest Api</description>
 	<properties>
