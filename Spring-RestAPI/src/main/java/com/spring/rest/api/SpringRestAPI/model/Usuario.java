@@ -29,7 +29,7 @@ public class Usuario implements Serializable {
 	
 	private String senha;
 	
-	@OneToMany(mappedBy = "usuario",orphanRemoval = true, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "usuario", orphanRemoval = true, cascade = CascadeType.ALL)
 	private List<Telefone> telefones = new ArrayList<Telefone>();
 	
 	public void setSenha(String senha) {

@@ -3,6 +3,7 @@ package com.spring.rest.api.SpringRestAPI.model;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,8 +27,8 @@ public class Telefone implements Serializable {
 	private String numero;
 	
 	@JsonIgnore
-	@ManyToOne
-	@JoinColumn(name = "usuario_id", foreignKey = @ForeignKey(name ="fk_usuario_id") )
+	@ManyToOne(optional = false, fetch = FetchType.LAZY)
+	@JoinColumn(name = "usuario_id", nullable = false, foreignKey = @ForeignKey(name ="fk_usuario_id") )
 	private Usuario usuario;
 
 
